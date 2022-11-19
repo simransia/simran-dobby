@@ -41,15 +41,17 @@ export default function TitlebarBelowImageList() {
     }
 
     const handleChange = (e) => {
+        e.preventDefault();
         if (e.target.name === 'name') {
             setName(e.target.value);
             setError(false)
-        } else {
-            setImage(e.target.files[0]);
-            setImageURL(URL.createObjectURL(e.target.files[0]))
+        } else{
+            let file = e.target.files || e.dataTransfer.files;
+            setImage(file[0]);
+            setImageURL(URL.createObjectURL(file[0]))
         }
     }
-
+    console.log(image, imageURL)
     const handleRemove = (e) => {
         setImage('');
         setImageURL('')
