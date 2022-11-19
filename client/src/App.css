@@ -20,9 +20,9 @@ input {
 
 input:focus {
   outline: none;
-  border: 2px solid #6360AB;
+  border: 2px solid #296D8A;
 }
 
 label:focus-within span {
-  color: #6360AB;
+  color:#296D8A;
 }

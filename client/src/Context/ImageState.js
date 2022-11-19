@@ -7,13 +7,14 @@ const ImageState = (props) => {
   const imagesInitial = []
 
   const host = "http://localhost:7000";
+
   const [images, setImages] = useState(imagesInitial);
 
   //add an image
   const addImage = async (formData, setProgress) => {
     const response = await axios({
       method: "post",
-      url: "http://localhost:7000/api/images/addimage",
+      url: `${host}/api/images/addimage`,
       data: formData,
       body: formData,
       headers: {

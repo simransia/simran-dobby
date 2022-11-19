@@ -11,7 +11,7 @@ function Header(props) {
             <span className='images-count'>{data.length} {data.length > 1 ? 'Images' : 'Image'}</span>
             <div className='action-container'>
                 <div id="wrap">
-                    <input id="search" name="search" type="text" placeholder="Type the name of the image you are looking for.." className='search-input' onChange={handleSearch} />
+                    <input id="search" name="search" type="text" placeholder="Search by name of the image..." className='search-input' onChange={handleSearch} />
                     <button type="submit" className='search-btn'><SearchIcon fontSize="large" /></button>
                 </div>
 

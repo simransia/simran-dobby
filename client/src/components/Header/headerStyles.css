@@ -30,24 +30,25 @@
   font-weight: 100;
   border: none;
   outline: none;
+  border-radius: 0;
   color: #555;
   padding:8px;
   padding-right: 60px;
-  width: 0px;
+  width: 330px;
   position: absolute;
   top: 0;
   right: 0;
   background:none;
+  border-bottom: 1px solid #BBB;
   z-index: 3;
   transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
   cursor: pointer;
 }
 
 .search-input:focus {
-  width: 350px;
-  z-index: 1;
   border:none;
-  border-bottom: 1px solid #BBB;
+  border-bottom: 2px solid #559FA8;
+  z-index: 1;
   cursor: text;
 }
 .search-btn {
