@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+body{
+  font-family:sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid #DCDCE4;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #6360AB;
+}
+
+label:focus-within span {
+  color: #6360AB;
+}

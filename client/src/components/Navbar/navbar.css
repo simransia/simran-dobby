@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    color: white;
+    font-family: 'Parisienne';
+    letter-spacing: 2px;
+}
+
+.navbar h2 {
+    font-size: 30px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato';
+}
+
+.navbar a:first-child {
+    margin-right: 15px;
+}

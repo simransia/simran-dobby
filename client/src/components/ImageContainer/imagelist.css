@@ -1,0 +1,52 @@
+.image-container {
+    width: 100%;
+    height: 240px;
+    padding: 8px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+.image-item {
+    position: relative;
+    width: calc(100% / 3 - 10px);
+    height: 280px;
+    float: left;
+    background-color: rgba(247, 164, 164, 0.5);
+    margin-bottom: 20px;
+}
+
+.image-item:nth-child(3n-1) {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(155, 236, 239, 0.5);
+}
+
+.image-name {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(203, 195, 227, 0.4);
+    font-family: "Parisienne";
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.image-name :last-child{
+    color: dimgray;
+}
+.delete {
+    position: absolute;
+    right: 8px;
+    z-index: 5;
+    width: 28px;
+    opacity: 0;
+    cursor: pointer;
+}
